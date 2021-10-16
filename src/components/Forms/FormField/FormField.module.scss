@@ -1,0 +1,23 @@
+@import 'src/colours';
+
+.formFieldLabel, .formField {
+    padding: 20px;
+    border-bottom: 1px solid $faint-light-grey-2;
+
+    &.darkMode {
+        border-bottom: 1px solid $almost-transparent-white;  
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+
+    > .formFieldExplanation {
+        margin-top: 1rem;
+    }
+}

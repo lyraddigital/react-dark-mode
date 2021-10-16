@@ -1,0 +1,1 @@
+export { BannerIcon } from './BannerIcon/BannerIcon';

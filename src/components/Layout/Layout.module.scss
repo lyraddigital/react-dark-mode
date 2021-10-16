@@ -1,0 +1,38 @@
+@import 'src/colours';
+
+#layout {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    color: $black;
+
+    &.darkMode {
+        background: $dark-black;
+        color: $white;
+    }
+
+    > header {
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        max-height: 50px;
+        font-size: 1.4rem;
+        padding: 0 16px;
+        box-shadow: $box-shadow-color 0 1px 2px 0;
+        background: $faint-dark-black;
+        z-index: 1000;
+    }
+
+    > #pageContent {
+        display: grid;
+        grid: 'content' 1fr
+              'footer' max-content
+              / 1fr;
+        flex: 1 0 0;
+    
+        > #mainContent {
+            grid-area: content;
+            padding: 0 40px;
+        }
+    }
+}

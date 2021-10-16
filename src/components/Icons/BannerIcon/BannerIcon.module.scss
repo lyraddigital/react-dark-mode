@@ -1,0 +1,14 @@
+@import 'src/colours';
+
+#bannerIcon {
+    width: 24px;
+    height: 24px;
+
+    .cls1 {
+        fill: $primary;
+    }
+
+    .cls2 {
+        fill: $white;
+    }
+}

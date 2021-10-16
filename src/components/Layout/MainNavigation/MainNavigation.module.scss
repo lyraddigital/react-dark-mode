@@ -1,0 +1,21 @@
+@import 'src/colours';
+
+#navigationContainer {
+    flex: 1 0 0;
+
+    #mainNavigation {
+        display: flex;
+        list-style: none;
+    
+        a {
+            text-decoration: none;
+            color: $white;
+            font-weight: 600;
+            padding-left: 2rem;
+    
+            &:hover, &.active {
+                color: $primary;
+            }
+        }
+    }
+}

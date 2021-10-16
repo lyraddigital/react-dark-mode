@@ -1,0 +1,1 @@
+export { insights } from './insights';
