@@ -1,8 +1,11 @@
 import classNames from 'classnames';
 
+import { useTheme } from 'hooks';
+
 import style from './GroupForm.module.scss';
 
-export const GroupForm = ({ title, children, isDarkMode }) => {
+export const GroupForm = ({ title, children }) => {
+    const { isDarkMode } = useTheme();
     const groupBodyClasses = classNames({
         [style.groupFormBody]: true,
         [style.darkMode]: isDarkMode

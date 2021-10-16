@@ -5,14 +5,13 @@ import { InsightTile } from "components/Insights";
 
 import style from './InsightsPage.module.scss';
 
-export const InsightsPage = ({ isDarkMode }) => {
+export const InsightsPage = () => {
     const insightEls = insights.map((insight, i) => (
         <InsightTile
             key={i}
             title={insight?.title}
             subTitle={insight?.subTitle}
-            insight={insight?.insight}
-            isDarkMode={isDarkMode} />
+            insight={insight?.insight} />
     ));
 
     return (

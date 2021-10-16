@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { 
   BrowserRouter as Router,
   Redirect,
@@ -7,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 import { Layout } from 'components/Layout';
-import { SlideToggle } from 'components/SlideToggle';
+import { ThemeProvider } from 'components/ThemeProvider';
 
 import {
   AccountPage,
@@ -16,29 +15,24 @@ import {
 } from 'pages';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(prevDarkMode => !prevDarkMode);
-  };
-
   return (
       <Router>
-        <Layout isDarkMode={isDarkMode}>
-          <Switch>
-            <Route exact path="/insights">
-              <InsightsPage isDarkMode={isDarkMode} />
-            </Route>
-            <Route exact path="/account">
-              <AccountPage isDarkMode={isDarkMode} />
-            </Route>
-            <Route exact path="/">
-              <Redirect to="/account" />
-            </Route>
-            <Route component={NotFoundPage} />
-          </Switch>
-        </Layout>
-        <SlideToggle toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <ThemeProvider>
+          <Layout>
+            <Switch>
+              <Route exact path="/insights">
+                <InsightsPage />
+              </Route>
+              <Route exact path="/account">
+                <AccountPage />
+              </Route>
+              <Route exact path="/">
+                <Redirect to="/account" />
+              </Route>
+              <Route component={NotFoundPage} />
+            </Switch>
+          </Layout>
+        </ThemeProvider>
       </Router>    
   );
 }
