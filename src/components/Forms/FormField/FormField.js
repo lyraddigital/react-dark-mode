@@ -1,8 +1,11 @@
 import classNames from 'classnames';
 
+import { useTheme } from 'hooks';
+
 import style from './FormField.module.scss';
 
-export const FormField = ({ fieldName, children, explanation, isDarkMode }) => {
+export const FormField = ({ fieldName, children, explanation }) => {
+    const { isDarkMode } = useTheme();
     const explanationEl = explanation ? (
         <div className={ style.formFieldExplanation }>{explanation}</div>
     ): null;

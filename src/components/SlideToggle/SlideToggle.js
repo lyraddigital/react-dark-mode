@@ -1,8 +1,11 @@
 import classNames from "classnames";
 
+import { useTheme } from "hooks";
+
 import style from './SlideToggle.module.scss';
 
-export const SlideToggle = ({ isDarkMode, toggleDarkMode }) => {
+export const SlideToggle = () => {
+    const { isDarkMode, toggleDarkMode } = useTheme();
     const textEl = isDarkMode ? (
         <span className={ style.positiveText }>Yes</span>
     ) : (
