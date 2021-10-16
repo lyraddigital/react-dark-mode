@@ -1,8 +1,8 @@
 import { Flex } from 'components/Layout';
 
-import style from './NotFound.module.scss';
+import style from './NotFoundPage.module.scss';
 
-export const NotFound = () => {
+export const NotFoundPage = () => {
     return (
         <Flex justifyContent="center" alignItems="center">
             <div id={ style.notFoundSection }>

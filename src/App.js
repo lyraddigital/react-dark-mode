@@ -7,11 +7,13 @@ import {
 } from 'react-router-dom';
 
 import { Layout } from 'components/Layout';
+import { SlideToggle } from 'components/Forms';
 
-import { AccountPage } from './pages/Account/AccountPage';
-import { InsightsPage } from './pages/Insights/InsightsPage';
-import { NotFound } from './pages/NotFound/NotFound';
-
+import {
+  AccountPage,
+  InsightsPage,
+  NotFoundPage
+} from 'pages';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -22,7 +24,7 @@ function App() {
 
   return (
       <Router>
-        <Layout isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}>
+        <Layout isDarkMode={isDarkMode}>
           <Switch>
             <Route exact path="/insights">
               <InsightsPage isDarkMode={isDarkMode} />
@@ -33,9 +35,10 @@ function App() {
             <Route exact path="/">
               <Redirect to="/account" />
             </Route>
-            <Route component={NotFound} />
+            <Route component={NotFoundPage} />
           </Switch>
         </Layout>
+        <SlideToggle toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </Router>    
   );
 }

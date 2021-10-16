@@ -15,7 +15,7 @@ export const SlideToggle = ({ isDarkMode, toggleDarkMode }) => {
     });
 
     return (
-        <div style={ { color: '#EEE', display: 'flex', alignItems: 'center', columnGap: '20px' }}>
+        <div className={ style.toggleButtonContainer }>
             <span>Dark Mode?</span>
             <div className={ style.slideToggle } onClick={toggleDarkMode}>
                 { textEl }

@@ -3,11 +3,10 @@ import classNames from "classnames";
 import { BannerIcon } from "components/Icons";
 import { MainNavigation } from './MainNavigation/MainNavigation'
 import { Footer } from "./Footer/Footer";
-import { SlideToggle } from "components/Forms/SlideToggle/SlideToggle";
 
 import style from './Layout.module.scss';
 
-export const Layout = ({ children, toggleDarkMode, isDarkMode }) => {
+export const Layout = ({ children, isDarkMode }) => {
     const layoutClasses = classNames({
         [style.darkMode]: isDarkMode
     });
@@ -16,8 +15,7 @@ export const Layout = ({ children, toggleDarkMode, isDarkMode }) => {
         <main id={ style.layout } className={ layoutClasses }>
             <header>
                 <BannerIcon />
-                <MainNavigation />
-                <SlideToggle toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+                <MainNavigation />                
             </header>
             <div id={ style.pageContent }>
                 <div id={ style.mainContent }>
