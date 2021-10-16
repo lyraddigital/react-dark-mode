@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import { Layout } from 'components/Layout';
-import { SlideToggle } from 'components/Forms';
+import { SlideToggle } from 'components/SlideToggle';
 
 import {
   AccountPage,

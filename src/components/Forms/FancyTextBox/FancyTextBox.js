@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+
 import style from './FancyTextBox.module.scss';
 
 export const FancyTextBox = ({ hideText, value, isDarkMode }) => {
