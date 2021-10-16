@@ -6,11 +6,6 @@
     background: $white;
     color: $black;
 
-    &.darkMode {
-        background: $dark-black;
-        color: $white;
-    }
-
     > header {
         display: flex;
         align-items: center;
@@ -34,5 +29,10 @@
             grid-area: content;
             padding: 0 40px;
         }
+    }
+
+    &.darkMode {
+        background: $dark-black;
+        color: $white;
     }
 }

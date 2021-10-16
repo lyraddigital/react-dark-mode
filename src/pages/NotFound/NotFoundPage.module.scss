@@ -1,12 +1,17 @@
-#notFoundSection {
-    h2 {
-        font-size: 3.2rem;
-        margin-bottom: 2.2rem;
-        text-align: center;
-    }
+#notFoundContainer {
+    display: grid;
+    min-height: 100%;
 
-    p {
-        font-size: 2.0rem;    
-        text-align: center;
+    #notFoundSection {
+        h2 {
+            font-size: 3.2rem;
+            margin-bottom: 2.2rem;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 2.0rem;    
+            text-align: center;
+        }
     }
 }
