@@ -2,7 +2,7 @@
 
 .insightTile {
     padding: 40px;
-    background: $faint-light-grey;
+    background: $light-insight-tile;
     border-radius: 3px;
 
     > h3 {
@@ -12,7 +12,7 @@
     > h4 {
         font-size: 1.5rem;
         font-weight: 400;
-        color: $tile-sub-title-light;
+        color: $light-insight-tile-sub-title;
         margin-bottom: 3rem;
     }
 
@@ -23,10 +23,10 @@
     }
 
     &.darkMode {
-        background: $faint-dark-black;
+        background: $dark-insight-tile;
 
         > h4 {
-            color: $tile-sub-title;
+            color: $dark-insight-tile-sub-title;
         }
     }
 }

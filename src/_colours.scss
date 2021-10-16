@@ -1,15 +1,31 @@
+/* Non Theme Setting */
 $box-shadow-color: rgba(0, 0, 0, 0.9);
-$almost-transparent-white: rgba(255, 255, 255, 0.1);
-$dark-black: #0e0e10;
 $faint-dark-black: rgb(24, 24, 27);
-$faint-dark-grey: rgba(255, 255, 255, 0.2);
 $white: #FFF;
-$faint-white: #EEE;
-$faint-light-grey: #DDD;
-$faint-light-grey-2: #CCC;
-$faint-light-grey-3: #BBB;
 $black: #111;
+$dark-black: #0e0e10;
+$faint-light-grey: #DDD;
 $primary: rgb(72, 130, 223);
 $primary-dark: rgb(58, 105, 180);
-$tile-sub-title: #999;
-$tile-sub-title-light: #666;
+
+/* Dark Mode */
+$dark-default-background: $dark-black;
+$dark-default-text: $white;
+$dark-form-body: $faint-dark-black;
+$dark-insight-tile: $faint-dark-black;
+$dark-insight-tile-sub-title: #999;
+$dark-form-field-bottom-border: rgba(255, 255, 255, 0.1);
+$dark-fancy-textbox-background: rgba(255, 255, 255, 0.2);
+$dark-fancy-textbox-background-focus: $dark-black;
+$dark-fancy-textbox-text: $white;
+
+/* Light Mode */
+$light-default-background: $white;
+$light-default-text: $black;
+$light-form-body: $faint-light-grey;
+$light-insight-tile: $faint-light-grey;
+$light-insight-tile-sub-title: #666;
+$light-form-field-bottom-border: #CCC;
+$light-fancy-textbox-background: #EEE;
+$light-fancy-textbox-background-focus: $white;
+$light-fancy-textbox-text: $black;

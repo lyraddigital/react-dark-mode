@@ -13,13 +13,13 @@
     > .groupFormBody {
         display: grid;
         grid-template-columns: 160px 1fr;
-        background: $faint-light-grey;
+        background: $light-form-body;
         border-radius: 3px;
         font-size: 1.3rem;
         font-weight: 400;
         
         &.darkMode {
-            background: $faint-dark-black; 
+            background: $dark-form-body; 
         }
     }
 

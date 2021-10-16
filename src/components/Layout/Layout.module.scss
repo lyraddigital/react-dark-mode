@@ -3,8 +3,8 @@
 #layout {
     display: flex;
     flex-direction: column;
-    background: $white;
-    color: $black;
+    background: $light-default-background;
+    color: $light-default-text;
 
     > header {
         display: flex;
@@ -32,7 +32,7 @@
     }
 
     &.darkMode {
-        background: $dark-black;
-        color: $white;
+        background: $dark-default-background;
+        color: $dark-default-text;
     }
 }

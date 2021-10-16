@@ -3,22 +3,22 @@
 .fancyTextbox {
     padding: 5px 10px;
     border-radius: 3px;
-    background: $faint-white;
-    color: $black;
+    background: $light-fancy-textbox-background;
+    color: $light-fancy-textbox-text;
     border: 2px solid transparent;
 
     &:focus {
         border: 2px solid $primary;
-        background: $white;
+        background: $light-fancy-textbox-background-focus;
         outline: none;
     }
 
     &.darkMode {
-        background: $faint-dark-grey;
-        color: $white;
+        background: $dark-fancy-textbox-background;
+        color: $dark-fancy-textbox-text;
 
         &:focus {
-            background: $dark-black;
+            background: $dark-fancy-textbox-background-focus;
         }
     }
 }

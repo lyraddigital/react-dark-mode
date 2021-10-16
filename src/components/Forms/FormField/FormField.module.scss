@@ -2,10 +2,10 @@
 
 .formFieldLabel, .formField {
     padding: 20px;
-    border-bottom: 1px solid $faint-light-grey-2;
+    border-bottom: 1px solid $light-form-field-bottom-border;
 
     &.darkMode {
-        border-bottom: 1px solid $almost-transparent-white;  
+        border-bottom: 1px solid $dark-form-field-bottom-border;  
     }
 
     &:last-of-type {
